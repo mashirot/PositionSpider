@@ -7,6 +7,6 @@ import java.util.Scanner
 fun main() {
     ConfigFile.loadFile()
     BossZhiPin.getJobList()
-    println("回车退出")
+    println("任意输入并回车退出")
     Scanner(System.`in`).next()
 }

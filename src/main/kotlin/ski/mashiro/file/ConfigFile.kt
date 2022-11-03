@@ -11,7 +11,7 @@ class ConfigFile {
     companion object {
         var config : Config? = null
 
-        private val configFile = File("Config.yml")
+        private val configFile = File(".", "Config.yml")
 
         private fun createFile() {
             if (!configFile.exists()) {

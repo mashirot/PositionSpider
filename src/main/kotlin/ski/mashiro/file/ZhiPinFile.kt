@@ -7,7 +7,7 @@ import java.io.File
 
 class ZhiPinFile {
     companion object {
-        private val zhiPinFile = File("zhiPin" + ConfigFile.config?.zhiPinConfig!!.initPage + "-" + ConfigFile.config?.zhiPinConfig!!.initPage + 3 + ".csv")
+        private val zhiPinFile = File(".", "zhiPin" + ConfigFile.config?.zhiPinConfig!!.initPage + "-" + ConfigFile.config?.zhiPinConfig!!.initPage + 3 + ".csv")
 
         fun exportResult(jobList: List<Job>) : Boolean {
             if (zhiPinFile.exists()) {
